@@ -90,6 +90,11 @@ The following observations were made during data preparation:
    - Mountain bikes and road bikes are the most common subcategories
    - Maintenance requirements vary by product type
 
+![Data](file/gold_customers.png)
+![Data](file/gold_sales.png)
+![Data](file/gold_products.png)
+
+
 3. **Sales Data**:
    - Orders contain 1-4 line items each
    - Prices range from $2 to $159 per unit
