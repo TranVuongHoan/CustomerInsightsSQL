@@ -39,6 +39,8 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 | SKUs | 295 | Balanced catalog—diverse yet manageable. |
 | Total Customers | 18,484 | Significant reach with room for deeper loyalty strategies. |
 
+![Data](image/output6.png)
+
 > **Key Takeaway:** Strong fundamentals with premium positioning, operational robustness, and growth capacity.
 
 ---
@@ -77,6 +79,8 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 
 > **Key Takeaway:** Strong global footprint with expansion potential in Europe and Canada. CRM hygiene required for better targeting.
 
+![Data](image/output7.png)
+
 ---
 
 ## ⚖️ 7. Gender Distribution
@@ -103,6 +107,8 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 
 > **Key Takeaway:** Prioritize bikes and optimize accessory sales. Reassess or refresh low-performing categories.
 
+![Data](image/output8.png)
+
 ---
 
 ## 💸 9. Pricing Structure
@@ -116,6 +122,7 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 
 > **Key Takeaway:** Tiered pricing supports entry to premium paths. Anchor pricing and value stacking can boost conversions.
 
+![Data](image/output3.png)
 ---
 
 ## 🧠 10. Customer Segmentation
@@ -128,6 +135,7 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 
 > **Key Takeaway:** Focus on converting regulars to VIP through rewards, exclusives, and early access.
 
+![Data](image/output4.png)
 ---
 
 ## 📅 11. Yearly Sales Trends
@@ -142,6 +150,7 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 
 > **Key Takeaway:** 2013 breakout year. 2012 dip may offer operational insights. Use learnings to optimize future launch cadences.
 
+![Data](image/output2.png)
 ---
 
 ## 💵 12. Avg. Order Price Over Time
@@ -171,6 +180,8 @@ Welcome to the comprehensive summary of our customer analytics report, which dis
 - Touring Tire Tube: $7.4K  
 - Bike Wash: $7.3K  
 - Patch Kit: $6.4K
+
+![Data](image/output10.png)
 
 > **Takeaway:** Modest revenue but essential for increasing AOV and customer satisfaction. Ideal for bundling or bonuses.
 
