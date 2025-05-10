@@ -95,6 +95,6 @@ The following observations were made during data preparation:
    - Prices range from $2 to $159 per unit
    - All orders in the sample were placed and shipped in March 2013
 
-![Data](image/gold.customers.png)
-![Data](image/gold.sales.png)
-![Data](image/gold.products.png)
+![Data](image/gold_customers.png)
+![Data](image/gold_sales.png)
+![Data](image/gold_products.png)
