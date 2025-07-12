@@ -73,4 +73,4 @@
 - **Data Modeling**: Star schema implementation
 - **Analysis**: Cohort analysis, trend forecasting
 
-![Data](image/modelsql.png)
+![Data](Image/modelsql.png)
