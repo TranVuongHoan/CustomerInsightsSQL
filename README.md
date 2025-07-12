@@ -1,76 +1,154 @@
-# Customer & Sales Analytics Project Summary
+# 🧠 Customer Sales Analytics Project
 
-## Project Overview
-**Objective**: Analyze 3+ years of customer/sales data (2010-2014) to uncover business insights and optimize operations.
+## Overview
 
-**Data Scope**:
-- 18,484 customers across 5+ countries
-- 27,659 orders with 60,423 units sold
-- $29.3M total revenue
-- 295 product SKUs across 4 categories
+This project delivers end-to-end data analytics on a multi-year customer sales dataset. It uses structured data preparation, modeling, and analysis practices to extract valuable insights for business strategy and growth.
 
-## Key Work Phases
+The analytics process follows the full pipeline from raw data to advanced business insights, structured into two major phases:
 
-### 1. Data Examination
-- Reviewed 3 core datasets:
-  - Customer demographics (age, location, gender)
-  - Product catalog (categories, pricing, maintenance)
-  - Sales transactions (orders, dates, revenue)
+- **Exploratory Data Analysis (EDA)**
+- **Advanced Analytics**
 
-### 2. Data Transformation
-- Standardized date formats (YYYY-MM-DD)
-- Validated referential integrity (customer/product keys)
-- Cleaned categorical values (gender, marital status)
-- Calculated derived metrics:
-  - Customer age
-  - Order fulfillment time
-  - Product age at sale
+---
 
-### 3. Data Modeling
-**Star Schema Implementation**:
-- **Fact Table**: `fact_sales` (transactions)
-- **Dimension Tables**: 
-  - `dim_customers` (demographics)
-  - `dim_products` (catalog details)
-- Established PK/FK relationships for query optimization
+## 📁 Data Sources
 
-### 4. Key Findings
+The project works with three main datasets:
 
-**Customer Insights**:
-- Balanced gender distribution (50.5% Male / 49.5% Female)
-- Multi-generational appeal (ages 29-76)
-- Geographic concentration: US (40%), Australia (19%)
+- `gold_customers`: Customer demographics and account data.
+- `gold_products`: Product catalog with categories and attributes.
+- `gold_sales`: Transactional order and sales data.
 
-**Product Performance**:
-- Bikes drive 96% of revenue ($28.3M)
-- Mountain-200 series top sellers ($1.3M per variant)
-- Clothing underperforms (1% revenue share)
+---
 
-**Sales Trends**:
-- 2013 breakout year ($16.3M revenue)
-- Declining AOV (2010: $3,101 → 2014: $1,668)
-- Healthy inventory turnover (205x)
+## 🔧 Data Preparation
 
-## Strategic Recommendations
+Detailed steps were taken to clean and structure the data:
 
-**Product**:
-- Expand Mountain-200 line variants
-- Bundle accessories with bikes
-- Re-evaluate clothing category strategy
+### ✅ Data Examination
+- Reviewed file contents and field structures for customers, products, and sales.
+- Identified primary keys and foreign key relationships.
 
-**Customer**:
-- Launch VIP loyalty program
-- Targeted win-back campaigns
-- Enhance demographic segmentation
+### 🧹 Data Cleaning & Transformation
+- Standardized date formats (`YYYY-MM-DD`)
+- Cleaned categorical variables (e.g., gender, marital status)
+- Verified data integrity (e.g., prices > 0, valid customer/product references)
+- Derived key fields:
+  - Customer Age
+  - Order Fulfillment Time
+  - Product Age at Sale
 
-**Operations**:
-- Improve demand forecasting
-- Audit inventory management
-- Clean CRM data for better analytics
+### 🔗 Relationship Mapping
+- Mapped relationships across datasets
+- Validated referential integrity
 
-## Tools & Techniques
-- **SQL**: Complex queries with CTEs/window functions
-- **Data Modeling**: Star schema implementation
-- **Analysis**: Cohort analysis, trend forecasting
+### 📈 Enhancement & Validation
+- Verified sales_amount = quantity × price
+- Cross-checked country names, birthdate anomalies, etc.
 
-![Data](Image/modelsql.png)
+---
+
+## 🧱 Data Modeling
+
+A **Star Schema** design was used for optimized analytics:
+
+### ⭐ Fact Table: `fact_sales`
+Tracks each line-level sales transaction:
+- Composite Primary Key: `(order_number, product_key, customer_key)`
+- Metrics: `sales_amount`, `quantity`, `price`, `order_date`, `shipping_date`, etc.
+
+### 📐 Dimension Tables:
+1. **`dim_customers`**: Customer demographics
+2. **`dim_products`**: Product metadata and hierarchy
+
+---
+
+## 📊 Data Analysis Approach
+
+The analysis follows two tracks based on the diagram:
+
+### 🔍 Exploratory Data Analysis (EDA)
+
+1. **Database Exploration** – structure and schema validation  
+2. **Dimensions Exploration** – fields, hierarchies, and categories  
+3. **Data Exploration** – nulls, outliers, duplicates  
+4. **Measures (Big Numbers)** – revenue, units, prices  
+5. **Magnitude** – sales volume comparisons  
+6. **Ranking** – top-N & bottom-N performers  
+
+### 🔬 Advanced Analytics
+
+7. **Change-Over-Time** – time-series trends by year  
+8. **Cumulative Analysis** – aggregate revenue, orders  
+9. **Performance Analysis** – best/worst customers/products  
+10. **Part-to-Whole** – category contribution to revenue  
+11. **Segmentation** – VIP, new, and dormant customer groups  
+12. **Reporting** – synthesis of business insights  
+
+---
+
+## 📌 Key Insights
+
+### 🗓️ Business Timeline
+- Duration: 3 years and 1 month (Dec 2010 – Jan 2014)
+- First Order: Holiday season launch
+- Peak year: 2013 with $16.3M in sales
+
+### 👤 Customer Profile
+- 18,484 total customers, mostly aged 29–76
+- Balanced gender split (Male: 9,341 | Female: 9,128)
+- High Millennial engagement, global customer base
+
+### 💰 Business Metrics
+- Total Revenue: $29.4M
+- Orders: 27,659 (avg. 2.2 items/order)
+- Avg. Price: $486/unit
+- Top Category: Bikes ($28.3M revenue)
+
+### 🌎 Geographic Reach
+- Top markets: USA (7,482), Australia (3,591), EU countries
+- CRM needs improvement (337 “Unknown” countries)
+
+### 🧾 Sales Performance
+- Revenue per order: $1,061
+- Inventory turnover: 205x
+- Best Sellers: Mountain-200 Series
+- Weakest: Apparel – needs repositioning
+
+### 📈 Trends
+- Declining AOV (avg. order value) from 2010 → 2014
+- 2012 dip followed by 2013 breakout
+- Accessories used for bundling; modest but strategic
+
+---
+
+## 🧭 Recommendations
+
+### 🎯 Product Strategy
+- Expand Mountain-200 line with tech upgrades
+- Bundle slow sellers with top performers
+- Rebrand low performers like apparel
+
+### 🧑 Customer Strategy
+- Launch VIP rewards program
+- Win-back campaigns for 6,274 dormant users
+- Use LTV and churn predictive models
+
+### 💸 Pricing Strategy
+- Maintain tiered pricing ($100–$1000)
+- Leverage anchor pricing
+- Emphasize value in upsell offers
+
+### ⚙️ Operational Strategy
+- Upgrade forecasting (e.g., Prophet, XGBoost)
+- Clean CRM & dimension data
+- Align stock with seasonal trends
+
+---
+
+## 📎 Conclusion
+
+This project showcases how clean data modeling and analytics can yield deep business insights. The company demonstrates product-market fit and global potential. With smarter targeting, bundling, and forecasting, sustainable and scalable growth is achievable.
+
+---
+
