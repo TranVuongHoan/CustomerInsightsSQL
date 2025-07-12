@@ -72,3 +72,5 @@
 - **SQL**: Complex queries with CTEs/window functions
 - **Data Modeling**: Star schema implementation
 - **Analysis**: Cohort analysis, trend forecasting
+
+![Data](image/modelsql.png)
