@@ -151,4 +151,5 @@ The analysis follows two tracks based on the diagram:
 This project showcases how clean data modeling and analytics can yield deep business insights. The company demonstrates product-market fit and global potential. With smarter targeting, bundling, and forecasting, sustainable and scalable growth is achievable.
 
 ---
+![Data](Image/modelsql.png)
 
